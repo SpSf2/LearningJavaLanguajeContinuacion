@@ -1,10 +1,31 @@
 package com.example;
 
-/**
- * Hello world!
- */
+import java.time.DayOfWeek;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        /*
+         * Sentencia Condicional switch case: Esta sentencia es una alternativa al uso
+         * de una sentencia if-else
+         * cuando haya que evaluar muchas condiciones
+         */
+
+        DayOfWeek today = DayOfWeek.FRIDAY;
+
+        switch (today) {
+            case MONDAY:
+                System.out.println("Vaya! Se hacen eternos los lunes");
+                break;
+            case TUESDAY:
+                System.out.println("Es martes");
+                break;
+            case FRIDAY:
+                System.out.println("Es viernes y el cuerpo lo sabe!!!"); 
+                break;  
+            default:
+                System.out.println("No existe ninguna info para el dia introducido");
+                break;
+        }
+
     }
 }
