@@ -26,6 +26,6 @@ public class App {
                 System.out.println("No existe ninguna info para el dia introducido");
                 break;
         }
-
+           
     }
 }
